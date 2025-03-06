@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fbeaff;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: #ff6b81;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Story Just for You 💖</h1>
+        <p>Once upon a time, in a world full of expectations and traditions, two hearts found each other in the most unexpected way. They understood love was not just about feelings but about respect, patience, and the courage to face what comes next. No matter what the world thought, they knew deep inside—when something is real, it finds a way. 💫</p>
+        <p>Time may pass, situations may change, but one thing remains constant—I will always be here, waiting for you. No rush, no pressure, just unwavering faith in what we share. ⏳❤️</p>
+        
+        <h2>Your Beautiful Character 💖</h2>
+        <p>You are kind, strong, and full of grace. Your heart shines brighter than anything, and the way you care for others makes you truly special. No matter where life takes us, I will always admire and respect the person you are. 💫</p>
+        
+        <h2>Click for a Compliment! 😊</h2>
+        <button class="button" onclick="showCompliment()">Give me a compliment</button>
+        <p id="compliment"></p>
+    </div>
+    
+    <script>
+        function showCompliment() {
+            const compliments = [
+                "You're amazing! 🌟", 
+                "You light up the world! ✨", 
+                "You have the best smile! 😊", 
+                "You're one of a kind! 💖"
+            ];
+            const randomIndex = Math.floor(Math.random() * compliments.length);
+            document.getElementById("compliment").innerText = compliments[randomIndex];
+        }
+    </script>
+</body>
+</html>
